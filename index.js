@@ -25,7 +25,7 @@ var api = new ParseServer({
  			{
        			 cert: 'vennpushcert.pem', // Prod PFX or P12
         		bundleId: 'io.vennn.Venn',  
-        		production: true // Prod
+        		production: false // Prod
   	    		}  
   			
   		}
