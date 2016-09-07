@@ -23,7 +23,7 @@ var api = new ParseServer({
   push: {
 	  ios: 
  			{
-       			 pfx: 'parsepushcert.p12', // Prod PFX or P12
+       			 cert: 'vennpushcert.pem', // Prod PFX or P12
         		bundleId: 'io.vennn.Venn',  
         		production: true // Prod
   	    		}  
