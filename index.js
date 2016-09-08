@@ -21,13 +21,18 @@ var api = new ParseServer({
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
   push: {
-	  ios: 
- 			{
-       			 cert: 'vennpushcert.pem', // Prod PFX or P12
+	  ios: [
+ 				{
+       			 pfx: 'apsdev.p12', // Prod PFX or P12
         		bundleId: 'io.vennn.Venn',  
         		production: false // Prod
+  	    		},
+				{
+       			 pfx: 'apsprod.p12', // Prod PFX or P12
+        		bundleId: 'io.vennn.Venn',  
+        		production: true // Prod
   	    		}  
-  			
+  		]	
   		}
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
